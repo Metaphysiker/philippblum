@@ -22,4 +22,5 @@ class StaticPagesController < ApplicationController
   def nonacademicstuff
 
   end
+
 end

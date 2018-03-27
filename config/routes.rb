@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   get '/services', to: 'static_pages#services'
 
   get '/nonacademicstuff', to: 'static_pages#nonacademicstuff'
+
+  get "cv", to: 'static_pages#cv'
 end
