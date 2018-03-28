@@ -23,4 +23,7 @@ class StaticPagesController < ApplicationController
 
   end
 
+  def testarea
+    @texts = Text.all
+  end
 end

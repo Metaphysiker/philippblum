@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :posts
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'static_pages#welcome'
 
@@ -8,6 +9,8 @@ Rails.application.routes.draw do
   get '/workshops', to: 'static_pages#workshops'
 
   get '/services', to: 'static_pages#services'
+
+  get '/testarea', to: 'static_pages#testarea'
 
   get '/nonacademicstuff', to: 'static_pages#nonacademicstuff'
 

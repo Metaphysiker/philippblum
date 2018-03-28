@@ -1,0 +1,80 @@
+<div class="row">
+  <div class="col-md-6 col-sm-12">
+    <%= form_with(model: post, local: true) do |form| %>
+        <% if post.errors.any? %>
+            <div id="error_explanation">
+              <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+              <ul>
+                <% post.errors.full_messages.each do |message| %>
+                    <li><%= message %></li>
+                <% end %>
+              </ul>
+            </div>
+        <% end %>
+
+        <div class="field">
+          <%= form.label :title %>
+          <br>
+          <%= form.text_field :title, id: :post_title %>
+        </div>
+
+        <div class="field">
+          <%= form.label :text %>
+          <br>
+          <%= form.text_area :text, id: :post_text, rows: "30", style: 'width:100%;' %>
+        </div>
+
+        <div class="actions">
+          <%= form.submit %>
+        </div>
+    <% end %>
+  </div>
+
+  <div class="col-md-6 col-sm-12">
+    <h3 class="text-center">
+      Vorschau
+    </h3>
+    <div class="jumbotron">
+
+      <h1 class="text-center" id="preview_title">
+
+      </h1>
+
+      <div id="preview_text">
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+<script>
+
+
+    $(document).ready(function() {
+
+        var starttitle = $( "#post_title" ).val();
+        $( "#preview_title" ).html( starttitle );
+
+        var starttext = $( "#post_text" ).text();
+        $( "#preview_text" ).html( starttext );
+
+        $( "#post_title" ).keyup(function() {
+            var newstr = $( "#post_title" ).val();
+            $( "#preview_title" ).html( newstr );
+        });
+
+        $( "#post_text" ).keyup(function() {
+            var newstr = $( "#post_text" ).val();
+            $( "#preview_text" ).html( newstr );
+        });
+    });
+
+</script>
