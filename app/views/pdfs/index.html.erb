@@ -1,0 +1,6 @@
+<% @pdfs.all.each do |pdf| %>
+
+    <%= pdf.title %> - <%= link_to "Download", pdf.file.url(:original, false), target: :_blank  %>
+    <br>
+    <%= link_to 'Remove', pdf_path(pdf), class: 'btn btn-danger', method: :delete, data: {confirm: 'Are you sure?'} %>
+<% end %>
