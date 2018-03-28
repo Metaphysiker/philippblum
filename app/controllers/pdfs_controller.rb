@@ -13,6 +13,7 @@ class PdfsController < ApplicationController
   #Create action ensures that submitted photo gets created if it meets the requirements
   def create
     @pdf = Pdf.new(pdf_params)
+
     if @pdf.save
       flash[:notice] = "Successfully added new pdf!"
       redirect_to root_path

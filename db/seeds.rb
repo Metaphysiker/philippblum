@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Pdf.create({
+    title: "CV",
+    file: File.new("#{Rails.root}/public/cv.pdf")
+           })
