@@ -4,6 +4,7 @@ class Pdf < ApplicationRecord
   has_attached_file :file
   validates_attachment :file, presence: true, content_type: { content_type: "application/pdf" }
 
+  validates :title, presence: true, uniqueness: true
 
   def pdf_remote_url=(url_value)
     self.file = URI.parse(url_value)

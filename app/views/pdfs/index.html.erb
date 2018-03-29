@@ -5,6 +5,7 @@
     <%= link_to 'Remove', pdf_path(pdf), class: 'btn btn-danger', method: :delete, data: {confirm: 'Are you sure?'} %> -
      <button type="button" class="btn btn-secondary clipboard-btn" data-clipboard-action="copy" data-clipboard-target="#<%= pdf.title %>" >Copy URL</button> <span id="<%= pdf.title %>"><%= (link_to pdf.title, pdf.file.url(:original, false), target: :_blank).chomp  %></span>
     <br>
+    <%= link_to pdf.title, getpdf_path(pdf.title) %>
     <br>
 <% end %>
 

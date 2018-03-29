@@ -33,6 +33,16 @@ class PdfsController < ApplicationController
     end
   end
 
+  def getpdf
+    title = params[:title]
+
+    unless title.nil?
+      pdf = Pdf.find_by_title(title)
+      redirect_to pdf.file.url(:original, false)
+    end
+
+  end
+
   private
 
   #Permitted parameters when creating a photo. This is used for security reasons.
