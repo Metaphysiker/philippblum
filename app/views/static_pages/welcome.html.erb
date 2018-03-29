@@ -15,19 +15,10 @@
     </div>
     </div>
     <div class="col-lg-6 col-md-8 col-sm-12 text-justify">
-      <p>Welcome to my website.
-
-      <p>I am a philosopher, employed currently as "Oberassistent" (roughly fixed-term senior research associate / lecturer) at the University of Lucerne (Chair of Philosophy, Faculty of Theology).  I am also an editor of <a href="http://dialectica.philosophie.ch">dialectica</a>, an international philosophy journal, the founder and vice-president of <a href="http://www.philosophie.ch/">www.philosophie.ch</a> and the project manager of ousia, the Swiss Doctoral Program in Philosophy.
-
-      <p>
-
-      <p>I am married to <a href="https://www.facebook.com/rosalia.blum">Rosalia Blum</a>, and father of two daughters: Aurora (born 2012) and Amalia (born 2014). Some time ago, I have changed my name from "Keller" to "Blum".
-
-      <p>Before coming to Lucerne, I spent a year at Humboldt University in Berlin, working on Kant, and before that (and a paternal break) another year working with Logos, at the University of Barcelona.  Even before that, I was a scientific collaborator at the philosophy department of the University of Geneva, coordinator of the research group eidos and a research consultant at the Faculty of Humanities of the University of Lausanne. Even before that,  I spent the academic year 2009-2010 as a postdoctoral researcher at the Universidad Nacional Aut&oacute;noma de M&eacute;xico.
-
-      <p If you want to contact me, please send me an email to <? email('philipp.blum@philosophie.ch');?>.
-
-      <p>My CV is available <%= link_to 'here', 'cv.pdf', download: '' %>.</p>
+      <p class="text-center"><%= sanitize @post.title %></p>
+      <div class="text-justify">
+        <%= sanitize @post.text %>
+      </div>
     </div>
     </div>
 
