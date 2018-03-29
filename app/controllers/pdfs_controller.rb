@@ -1,6 +1,6 @@
 class PdfsController < ApplicationController
-  before_action :authenticate_user!
-  before_action :user_allowed?
+  before_action :authenticate_user!, except: :getpdf
+  before_action :user_allowed?, except: :getpdf
   #Index action, photos gets listed in the order at which they were created
   def index
     @pdfs = Pdf.all
