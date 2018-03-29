@@ -1,5 +1,5 @@
 class Pdf < ApplicationRecord
-  before_save :set_url, :staticpdf?
+  before_save :set_url
   attr_reader :pdf_remote_url
 
   has_attached_file :file
