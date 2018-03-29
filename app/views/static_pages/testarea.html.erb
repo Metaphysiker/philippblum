@@ -1,0 +1,14 @@
+<div class="testarea">
+  <%= form_tag("/search", method: "get") do %>
+      <%= label_tag(:q, "Search for:") %>
+      <%= text_field_tag(:q) %>
+      <%= submit_tag("Search") %>
+  <% end %>
+
+
+    <% @texts.each do |text| %>
+      <%= text.title %>
+      <br>
+      <%= text.text %>
+      <% end %>
+</div>
