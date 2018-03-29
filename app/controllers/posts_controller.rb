@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  before_action :user_allowed?
   before_action :set_post, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
   # GET /posts
@@ -40,15 +41,11 @@ class PostsController < ApplicationController
   # PATCH/PUT /posts/1
   # PATCH/PUT /posts/1.json
   def update
-    respond_to do |format|
       if @post.update(post_params)
-        format.html { redirect_to @post, notice: 'Post was successfully updated.' }
-        format.json { render :show, status: :ok, location: @post }
+        redirect_to root_path
       else
-        format.html { render :edit }
-        format.json { render json: @post.errors, status: :unprocessable_entity }
+       render :edit
       end
-    end
   end
 
   # DELETE /posts/1
@@ -71,4 +68,6 @@ class PostsController < ApplicationController
     def post_params
       params.require(:post).permit(:title, :text)
     end
+
+
 end

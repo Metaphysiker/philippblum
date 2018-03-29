@@ -1,5 +1,6 @@
 class PdfsController < ApplicationController
   before_action :authenticate_user!
+  before_action :user_allowed?
   #Index action, photos gets listed in the order at which they were created
   def index
     @pdfs = Pdf.all
@@ -18,7 +19,7 @@ class PdfsController < ApplicationController
     @pdf = Pdf.find(params[:id])
 
       if @pdf.update(pdf_params)
-        redirect_to pdfs_path
+        redirect_back(fallback_location: root_path)
       else
         render :edit
       end
