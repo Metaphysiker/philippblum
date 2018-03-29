@@ -1,11 +1,48 @@
-<% Regexp.escape('\*?{}.') %>
-
-   <% @pdfs.all.each do |pdf| %>
+ <% @pdfs.all.each do |pdf| %>
 
     <%= link_to pdf.title, pdf.file.url(:original, false), target: :_blank  %>
      -
     <%= link_to 'Remove', pdf_path(pdf), class: 'btn btn-danger', method: :delete, data: {confirm: 'Are you sure?'} %> -
-    Copy-Paste: <%= "#{link_to pdf.title, pdf.file.url(:original, false), target: :_blank}"  %>
+     <button type="button" class="btn btn-secondary clipboard-btn" data-clipboard-action="copy" data-clipboard-target="#<%= pdf.title %>" >Copy URL</button> <span id="<%= pdf.title %>"><%= (link_to pdf.title, pdf.file.url(:original, false), target: :_blank).chomp  %></span>
     <br>
     <br>
 <% end %>
+
+ <script>
+     $(document).ready(function(){
+
+// Tooltip
+
+         $('.clipboard-btn').tooltip({
+             trigger: 'click',
+             placement: 'bottom'
+         });
+
+         function setTooltip(btn, message) {
+             $(btn).tooltip('hide')
+                 .attr('data-original-title', message)
+                 .tooltip('show');
+         }
+
+         function hideTooltip(btn) {
+             setTimeout(function() {
+                 $(btn).tooltip('hide');
+             }, 1000);
+         }
+
+// Clipboard
+
+         var clipboard = new Clipboard('.clipboard-btn');
+
+         clipboard.on('success', function(e) {
+             setTooltip(e.trigger, 'Copied!');
+             hideTooltip(e.trigger);
+         });
+
+         clipboard.on('error', function(e) {
+             setTooltip(e.trigger, 'Failed!');
+             hideTooltip(e.trigger);
+         });
+
+     });
+ </script>
