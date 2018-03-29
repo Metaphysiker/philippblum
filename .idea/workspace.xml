@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9e97be1b-404e-43f5-82a7-42cc896d91c9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/pdf.rb" afterPath="$PROJECT_DIR$/app/models/pdf.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -29,21 +29,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="production.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="production.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="103" column="3" lean-forward="false" selection-start-line="103" selection-start-column="3" selection-end-line="103" selection-end-column="3" />
-              <folding>
-                <marker date="1522330147070" expanded="true" signature="243:494" ph="##..." />
-                <marker date="1522330147070" expanded="true" signature="689:848" ph="##..." />
-                <marker date="1522330147070" expanded="true" signature="891:1006" ph="##..." />
-                <marker date="1522330147070" expanded="true" signature="1165:1277" ph="##..." />
-                <marker date="1522330147070" expanded="true" signature="1313:2262" ph="##..." />
-                <marker date="1522330147070" expanded="true" signature="2382:2672" ph="##..." />
-                <marker date="1522330147070" expanded="true" signature="2723:3093" ph="##..." />
-                <marker date="1522330147070" expanded="true" signature="3359:3519" ph="##..." />
-              </folding>
+            <state relative-caret-position="279">
+              <caret line="91" column="88" lean-forward="false" selection-start-line="91" selection-start-column="88" selection-end-line="91" selection-end-column="88" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -60,7 +51,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pdf.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pdf.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/pdf.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
@@ -145,8 +136,8 @@
     <findStrings>
       <find>publi</find>
       <find>secret_key</find>
-      <find>photo</find>
       <find>staticpdf?</find>
+      <find>photo</find>
     </findStrings>
     <replaceStrings>
       <replace>pdf</replace>
@@ -185,10 +176,10 @@
         <option value="$PROJECT_DIR$/app/views/static_pages/workshops.html.erb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/teaching.html.erb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/welcome.html.erb" />
-        <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/config/initializers/paperclip.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/models/pdf.rb" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
       </list>
     </option>
   </component>
@@ -472,7 +463,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56281000" />
+    <option name="totallyTimeSpent" value="57072000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -623,16 +614,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-          <folding>
-            <marker date="1522330147070" expanded="true" signature="243:494" ph="##..." />
-            <marker date="1522330147070" expanded="true" signature="689:848" ph="##..." />
-            <marker date="1522330147070" expanded="true" signature="891:1006" ph="##..." />
-            <marker date="1522330147070" expanded="true" signature="1165:1277" ph="##..." />
-            <marker date="1522330147070" expanded="true" signature="1313:2262" ph="##..." />
-            <marker date="1522330147070" expanded="true" signature="2382:2672" ph="##..." />
-            <marker date="1522330147070" expanded="true" signature="2723:3093" ph="##..." />
-            <marker date="1522330147070" expanded="true" signature="3359:3519" ph="##..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -996,23 +978,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="103" column="3" lean-forward="false" selection-start-line="103" selection-start-column="3" selection-end-line="103" selection-end-column="3" />
-          <folding>
-            <marker date="1522330147070" expanded="true" signature="243:494" ph="##..." />
-            <marker date="1522330147070" expanded="true" signature="689:848" ph="##..." />
-            <marker date="1522330147070" expanded="true" signature="891:1006" ph="##..." />
-            <marker date="1522330147070" expanded="true" signature="1165:1277" ph="##..." />
-            <marker date="1522330147070" expanded="true" signature="1313:2262" ph="##..." />
-            <marker date="1522330147070" expanded="true" signature="2382:2672" ph="##..." />
-            <marker date="1522330147070" expanded="true" signature="2723:3093" ph="##..." />
-            <marker date="1522330147070" expanded="true" signature="3359:3519" ph="##..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -1027,6 +992,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="29" lean-forward="true" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="91" column="88" lean-forward="false" selection-start-line="91" selection-start-column="88" selection-end-line="91" selection-end-column="88" />
           <folding />
         </state>
       </provider>
