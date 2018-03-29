@@ -1,4 +1,5 @@
 class Pdf < ApplicationRecord
+  before_save :set_url
   attr_reader :pdf_remote_url
 
   has_attached_file :file
@@ -12,6 +13,11 @@ class Pdf < ApplicationRecord
     # avatar_file_name == "face.png"
     # avatar_content_type == "image/png"
     @pdf_remote_url = url_value
+  end
+
+  def set_url
+    #self.update(url: URLify.urlify(self.title))
+    self.url = URLify.urlify(self.title)
   end
 
 end

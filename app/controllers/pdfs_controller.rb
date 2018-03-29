@@ -34,10 +34,10 @@ class PdfsController < ApplicationController
   end
 
   def getpdf
-    title = params[:title]
+    url = params[:url]
 
-    unless title.nil?
-      pdf = Pdf.find_by_title(title)
+    unless url.nil?
+      pdf = Pdf.find_by_url(url)
       redirect_to pdf.file.url(:original, false)
     end
 
