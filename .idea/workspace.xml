@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9e97be1b-404e-43f5-82a7-42cc896d91c9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/paperclip.rb" afterPath="$PROJECT_DIR$/config/initializers/paperclip.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/_jumbo.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/_jumbo.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/welcome.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/welcome.html.erb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -40,11 +40,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="paperclip.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="paperclip.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/initializers/paperclip.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="86" lean-forward="false" selection-start-line="0" selection-start-column="85" selection-end-line="0" selection-end-column="86" />
+              <caret line="0" column="43" lean-forward="false" selection-start-line="0" selection-start-column="43" selection-end-line="0" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_jumbo.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/static_pages/_jumbo.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -92,50 +102,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="welcome.html.erb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="welcome.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/static_pages/welcome.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="19" column="34" lean-forward="false" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+            <state relative-caret-position="136">
+              <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
               <folding>
-                <marker date="1522330147070" expanded="true" signature="596:10269" ph="..." />
-                <marker date="1522330147070" expanded="true" signature="636:2802" ph="..." />
-                <marker date="1522330147070" expanded="true" signature="700:2789" ph="..." />
-                <marker date="1522330147070" expanded="true" signature="713:1097" ph="..." />
-                <marker date="1522330147070" expanded="true" signature="1101:1566" ph="..." />
-                <marker date="1522330147070" expanded="false" signature="1114:1121" ph="ê" />
-                <marker date="1522330147070" expanded="false" signature="1215:1222" ph="Â" />
-                <marker date="1522330147070" expanded="false" signature="1237:1245" ph="é" />
-                <marker date="1522330147070" expanded="false" signature="1254:1262" ph="é" />
-                <marker date="1522330147070" expanded="false" signature="1275:1283" ph="è" />
-                <marker date="1522330147070" expanded="false" signature="1287:1295" ph="É" />
-                <marker date="1522330147070" expanded="false" signature="1377:1385" ph="à" />
-                <marker date="1522330147070" expanded="true" signature="1570:1967" ph="..." />
-                <marker date="1522330147070" expanded="true" signature="1971:2170" ph="..." />
-                <marker date="1522330147070" expanded="true" signature="2174:2448" ph="..." />
-                <marker date="1522330147070" expanded="true" signature="2452:2784" ph="..." />
-                <marker date="1522330147070" expanded="true" signature="2842:10260" ph="..." />
-                <marker date="1522330147070" expanded="true" signature="2894:10238" ph="..." />
-                <marker date="1522330147070" expanded="true" signature="2907:6035" ph="..." />
-                <marker date="1522330147070" expanded="true" signature="6039:7643" ph="..." />
-                <marker date="1522330147070" expanded="true" signature="6228:7634" ph="..." />
-                <marker date="1522330147070" expanded="true" signature="6245:6442" ph="..." />
-                <marker date="1522330147070" expanded="true" signature="6446:6610" ph="..." />
-                <marker date="1522330147070" expanded="true" signature="6614:6864" ph="..." />
-                <marker date="1522330147070" expanded="true" signature="6868:7038" ph="..." />
-                <marker date="1522330147070" expanded="true" signature="7042:7252" ph="..." />
-                <marker date="1522330147070" expanded="true" signature="7256:7429" ph="..." />
-                <marker date="1522330147070" expanded="true" signature="7433:7629" ph="..." />
-                <marker date="1522330147070" expanded="true" signature="7647:8457" ph="..." />
-                <marker date="1522330147070" expanded="false" signature="7664:7672" ph="à" />
-                <marker date="1522330147070" expanded="true" signature="7818:8448" ph="..." />
-                <marker date="1522330147070" expanded="true" signature="7835:8443" ph="..." />
-                <marker date="1522330147070" expanded="true" signature="8461:9761" ph="..." />
-                <marker date="1522330147070" expanded="true" signature="8680:9752" ph="..." />
-                <marker date="1522330147070" expanded="true" signature="8697:9246" ph="..." />
-                <marker date="1522330147070" expanded="true" signature="9250:9518" ph="..." />
-                <marker date="1522330147070" expanded="true" signature="9522:9747" ph="..." />
-                <marker date="1522330147070" expanded="true" signature="9765:10002" ph="..." />
+                <marker date="1522334165248" expanded="false" signature="1143:1150" ph="ê" />
+                <marker date="1522334165248" expanded="false" signature="1244:1251" ph="Â" />
+                <marker date="1522334165248" expanded="false" signature="1266:1274" ph="é" />
+                <marker date="1522334165248" expanded="false" signature="1283:1291" ph="é" />
+                <marker date="1522334165248" expanded="false" signature="1304:1312" ph="è" />
+                <marker date="1522334165248" expanded="false" signature="1316:1324" ph="É" />
+                <marker date="1522334165248" expanded="false" signature="1406:1414" ph="à" />
+                <marker date="1522334165248" expanded="false" signature="7693:7701" ph="à" />
               </folding>
             </state>
           </provider>
@@ -191,16 +171,16 @@
         <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/services1.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/static_pages_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/static_pages/_jumbo.html.erb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/research.html.erb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/services.html.erb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/workshops.html.erb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/teaching.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/static_pages/welcome.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/models/pdf.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/config/initializers/paperclip.rb" />
+        <option value="$PROJECT_DIR$/app/views/static_pages/_jumbo.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/static_pages/welcome.html.erb" />
       </list>
     </option>
   </component>
@@ -211,8 +191,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-110" />
-    <option name="y" value="199" />
+    <option name="x" value="-4" />
+    <option name="y" value="165" />
     <option name="width" value="1170" />
     <option name="height" value="734" />
   </component>
@@ -484,7 +464,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58013000" />
+    <option name="totallyTimeSpent" value="58939000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -496,7 +476,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-110" y="199" width="1170" height="734" extended-state="0" />
+    <frame x="-4" y="165" width="1170" height="734" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22849463" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -573,44 +553,14 @@
         <state relative-caret-position="493">
           <caret line="29" column="28" lean-forward="false" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="73" />
           <folding>
-            <marker date="1522330147070" expanded="true" signature="596:10269" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="636:2802" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="700:2789" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="713:1097" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="1101:1566" ph="..." />
-            <marker date="1522330147070" expanded="false" signature="1114:1121" ph="ê" />
-            <marker date="1522330147070" expanded="false" signature="1215:1222" ph="Â" />
-            <marker date="1522330147070" expanded="false" signature="1237:1245" ph="é" />
-            <marker date="1522330147070" expanded="false" signature="1254:1262" ph="é" />
-            <marker date="1522330147070" expanded="false" signature="1275:1283" ph="è" />
-            <marker date="1522330147070" expanded="false" signature="1287:1295" ph="É" />
-            <marker date="1522330147070" expanded="false" signature="1377:1385" ph="à" />
-            <marker date="1522330147070" expanded="true" signature="1570:1967" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="1971:2170" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="2174:2448" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="2452:2784" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="2842:10260" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="2894:10238" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="2907:6035" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="6039:7643" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="6228:7634" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="6245:6442" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="6446:6610" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="6614:6864" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="6868:7038" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="7042:7252" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="7256:7429" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="7433:7629" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="7647:8457" ph="..." />
-            <marker date="1522330147070" expanded="false" signature="7664:7672" ph="à" />
-            <marker date="1522330147070" expanded="true" signature="7818:8448" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="7835:8443" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="8461:9761" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="8680:9752" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="8697:9246" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="9250:9518" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="9522:9747" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="9765:10002" ph="..." />
+            <marker date="1522334165248" expanded="false" signature="1143:1150" ph="ê" />
+            <marker date="1522334165248" expanded="false" signature="1244:1251" ph="Â" />
+            <marker date="1522334165248" expanded="false" signature="1266:1274" ph="é" />
+            <marker date="1522334165248" expanded="false" signature="1283:1291" ph="é" />
+            <marker date="1522334165248" expanded="false" signature="1304:1312" ph="è" />
+            <marker date="1522334165248" expanded="false" signature="1316:1324" ph="É" />
+            <marker date="1522334165248" expanded="false" signature="1406:1414" ph="à" />
+            <marker date="1522334165248" expanded="false" signature="7693:7701" ph="à" />
           </folding>
         </state>
       </provider>
@@ -908,60 +858,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_pages/_jumbo.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="4" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_pages/welcome.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="19" column="34" lean-forward="false" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-          <folding>
-            <marker date="1522330147070" expanded="true" signature="596:10269" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="636:2802" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="700:2789" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="713:1097" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="1101:1566" ph="..." />
-            <marker date="1522330147070" expanded="false" signature="1114:1121" ph="ê" />
-            <marker date="1522330147070" expanded="false" signature="1215:1222" ph="Â" />
-            <marker date="1522330147070" expanded="false" signature="1237:1245" ph="é" />
-            <marker date="1522330147070" expanded="false" signature="1254:1262" ph="é" />
-            <marker date="1522330147070" expanded="false" signature="1275:1283" ph="è" />
-            <marker date="1522330147070" expanded="false" signature="1287:1295" ph="É" />
-            <marker date="1522330147070" expanded="false" signature="1377:1385" ph="à" />
-            <marker date="1522330147070" expanded="true" signature="1570:1967" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="1971:2170" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="2174:2448" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="2452:2784" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="2842:10260" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="2894:10238" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="2907:6035" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="6039:7643" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="6228:7634" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="6245:6442" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="6446:6610" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="6614:6864" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="6868:7038" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="7042:7252" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="7256:7429" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="7433:7629" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="7647:8457" ph="..." />
-            <marker date="1522330147070" expanded="false" signature="7664:7672" ph="à" />
-            <marker date="1522330147070" expanded="true" signature="7818:8448" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="7835:8443" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="8461:9761" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="8680:9752" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="8697:9246" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="9250:9518" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="9522:9747" ph="..." />
-            <marker date="1522330147070" expanded="true" signature="9765:10002" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1022,8 +918,33 @@
     <entry file="file://$PROJECT_DIR$/config/initializers/paperclip.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="86" lean-forward="false" selection-start-line="0" selection-start-column="85" selection-end-line="0" selection-end-column="86" />
+          <caret line="0" column="43" lean-forward="false" selection-start-line="0" selection-start-column="43" selection-end-line="0" selection-end-column="43" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static_pages/_jumbo.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static_pages/welcome.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+          <folding>
+            <marker date="1522334165248" expanded="false" signature="1143:1150" ph="ê" />
+            <marker date="1522334165248" expanded="false" signature="1244:1251" ph="Â" />
+            <marker date="1522334165248" expanded="false" signature="1266:1274" ph="é" />
+            <marker date="1522334165248" expanded="false" signature="1283:1291" ph="é" />
+            <marker date="1522334165248" expanded="false" signature="1304:1312" ph="è" />
+            <marker date="1522334165248" expanded="false" signature="1316:1324" ph="É" />
+            <marker date="1522334165248" expanded="false" signature="1406:1414" ph="à" />
+            <marker date="1522334165248" expanded="false" signature="7693:7701" ph="à" />
+          </folding>
         </state>
       </provider>
     </entry>

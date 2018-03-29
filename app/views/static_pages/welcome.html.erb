@@ -17,7 +17,7 @@
     <div class="col-lg-6 col-md-8 col-sm-12 text-justify">
       <p class="text-center"><%= sanitize @post.title %></p>
       <div class="text-justify">
-        <%= sanitize @post.text %>
+        <%= sanitize @post.text, attributes: %w(href target) %>
       </div>
     </div>
     </div>
