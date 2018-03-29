@@ -19,6 +19,10 @@
       <div class="text-justify">
         <%= sanitize @post.text, attributes: %w(href target) %>
       </div>
+
+      <% if user_signed_in? && current_user.is_admin? %>
+          <%= link_to('Edit', edit_post_path(@post), class: 'btn btn-primary' ) %>
+      <% end %>
     </div>
     </div>
 

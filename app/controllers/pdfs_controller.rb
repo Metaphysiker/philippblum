@@ -1,5 +1,6 @@
 class PdfsController < ApplicationController
-
+  before_action :authenticate_user!
+  before_action :user_allowed?
   #Index action, photos gets listed in the order at which they were created
   def index
     @pdfs = Pdf.all
@@ -18,6 +19,7 @@ class PdfsController < ApplicationController
     @pdf = Pdf.find(params[:id])
 
       if @pdf.update(pdf_params)
+        flash[:notice] = "Successfully updated pdf!"
         redirect_to pdfs_path
       else
         render :edit
@@ -29,7 +31,7 @@ class PdfsController < ApplicationController
 
     if @pdf.save
       flash[:notice] = "Successfully added new pdf!"
-      redirect_to root_path
+      redirect_to pdfs_path
     else
       flash[:alert] = "Error adding new pdf!"
       render :new
@@ -39,7 +41,7 @@ class PdfsController < ApplicationController
   def destroy
     @pdf= Pdf.find(params[:id])
     if @pdf.destroy
-      flash[:notice] = "Successfully deleted photo!"
+      flash[:notice] = "Successfully deleted pdf!"
       redirect_to root_path
     else
       flash[:alert] = "Error deleting photo!"
