@@ -19,7 +19,7 @@ class PdfsController < ApplicationController
     @pdf = Pdf.find(params[:id])
 
       if @pdf.update(pdf_params)
-        redirect_back(fallback_location: root_path)
+        redirect_to pdfs_path
       else
         render :edit
       end
@@ -30,7 +30,7 @@ class PdfsController < ApplicationController
 
     if @pdf.save
       flash[:notice] = "Successfully added new pdf!"
-      redirect_to root_path
+      redirect_to pdfs_path
     else
       flash[:alert] = "Error adding new pdf!"
       render :new
