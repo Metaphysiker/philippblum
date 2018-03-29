@@ -20,10 +20,12 @@ class Pdf < ApplicationRecord
     self.url = URLify.urlify(self.title)
   end
 
-  def staticpdf?
+  def is_cv?
     staticpdfs = ["CV"]
 
     if staticpdfs.include?(self.title)
+      return true
+    else
       return false
     end
   end
