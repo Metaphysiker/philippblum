@@ -1,5 +1,5 @@
 class Pdf < ApplicationRecord
-  before_save :set_url
+  before_save :set_url, :staticpdf?
   attr_reader :pdf_remote_url
 
   has_attached_file :file
@@ -18,6 +18,14 @@ class Pdf < ApplicationRecord
   def set_url
     #self.update(url: URLify.urlify(self.title))
     self.url = URLify.urlify(self.title)
+  end
+
+  def staticpdf?
+    staticpdfs = ["CV"]
+
+    if staticpdfs.include?(self.title)
+      return false
+    end
   end
 
 end
