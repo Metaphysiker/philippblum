@@ -42,6 +42,7 @@ class PostsController < ApplicationController
   # PATCH/PUT /posts/1.json
   def update
       if @post.update(post_params)
+        flash[:notice] = "Successfully updated post!"
         redirect_to root_path
       else
        render :edit

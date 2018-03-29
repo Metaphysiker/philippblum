@@ -1,4 +1,7 @@
 
+<%= link_to 'New PDF', new_pdf_path(), class: 'btn btn-primary' %>
+<br>
+<br>
  <table class="table table-hover table-bordered results">
    <thead>
    <tr>
@@ -28,7 +31,7 @@
          </td>
        </tr>
        <tr>
-         <td>
+         <td class="text-center">
            <button type="button" class="btn btn-secondary clipboard-btn" data-clipboard-action="copy" data-clipboard-target="#<%= pdf.url %>" >Copy URL</button>
          </td>
          <td colspan="4">

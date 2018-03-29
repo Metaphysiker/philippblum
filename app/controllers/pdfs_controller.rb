@@ -19,6 +19,7 @@ class PdfsController < ApplicationController
     @pdf = Pdf.find(params[:id])
 
       if @pdf.update(pdf_params)
+        flash[:notice] = "Successfully updated pdf!"
         redirect_to pdfs_path
       else
         render :edit
@@ -40,7 +41,7 @@ class PdfsController < ApplicationController
   def destroy
     @pdf= Pdf.find(params[:id])
     if @pdf.destroy
-      flash[:notice] = "Successfully deleted photo!"
+      flash[:notice] = "Successfully deleted pdf!"
       redirect_to root_path
     else
       flash[:alert] = "Error deleting photo!"
