@@ -10,6 +10,19 @@ class PdfsController < ApplicationController
     @pdf = Pdf.new
   end
 
+  def edit
+    @pdf = Pdf.find(params[:id])
+  end
+
+  def update
+    @pdf = Pdf.find(params[:id])
+
+      if @pdf.update(pdf_params)
+        redirect_to pdfs_path
+      else
+        render :edit
+      end
+  end
   #Create action ensures that submitted photo gets created if it meets the requirements
   def create
     @pdf = Pdf.new(pdf_params)
