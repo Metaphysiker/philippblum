@@ -39,10 +39,21 @@
           <%= link_to "Non-Academic Stuff", nonacademicstuff_path, class:"nav-link" %>
         </li>
       </ul>
+
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <%= link_to "Research", research_path, class:"nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Teaching", teaching_path, class:"nav-link" %>
+        </li>
+      </ul>
     </div>
   </nav>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
 
-    <div class="container">
+  <div class="container">
       <%= yield %>
     </div>
 

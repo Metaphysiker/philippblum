@@ -1,5 +1,5 @@
 class PdfsController < ApplicationController
-
+  before_action :authenticate_user!
   #Index action, photos gets listed in the order at which they were created
   def index
     @pdfs = Pdf.all
