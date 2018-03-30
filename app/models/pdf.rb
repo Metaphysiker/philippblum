@@ -23,11 +23,8 @@ class Pdf < ApplicationRecord
   def is_cv?
     staticpdfs = ["CV"]
 
-    if staticpdfs.include?(self.title)
-      return true
-    else
-      return false
-    end
+    staticpdfs.include?(self.title)
+
   end
 
 end
