@@ -10,6 +10,7 @@
      <th>Filename</th>
      <th>Edit</th>
      <th>Delete</th>
+     <th>View</th>
    </tr>
    <tr class="warning no-result">
      <td colspan="4"><i class="fa fa-warning"></i> No result</td>
@@ -29,13 +30,16 @@
          <td>
            <%= link_to 'Remove', video_path(video), class: 'btn btn-danger', method: :delete, data: {confirm: 'Are you sure?'} %>
          </td>
+         <td rowspan="2">
+           <%= video_tag video.video.url(:original, false), :class => "embed-responsive", :controls => true %>
+         </td>
        </tr>
        <tr>
          <td class="text-center">
            <button type="button" class="btn btn-secondary clipboard-btn" data-clipboard-action="copy" data-clipboard-target="#<%= video.url %>" >Copy URL</button>
          </td>
          <td colspan="4">
-            <span id="<%= video.url %>"><%= (video_tag video.video.url(:original, false), :size => "320x240", :controls => true).chomp %></span>
+            <span id="<%= video.url %>"><%= (video_tag video.video.url(:original, false), :class => "embed-responsive", :controls => true).chomp %></span>
          </td>
        </tr>
    <% end %>
