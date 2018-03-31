@@ -1,0 +1,21 @@
+<%= form_tag("/index2", method: "get", remote: true) do %>
+    <%= label_tag(:search, "Search for:") %>
+    <%= text_field_tag(:search) %>
+    <%= submit_tag("Search", id: "triggersearch", class: "invisible form-control") %>
+<% end %>
+
+<div id="pdfresults">
+  <%= render 'pdfresults' %>
+</div>
+
+<script>
+    $(document).ready(function(){
+
+        addclipboard();
+
+        $( "#search" ).keyup(function() {
+          $("#triggersearch").click();
+        });
+
+    });
+</script>

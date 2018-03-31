@@ -13,5 +13,6 @@
 //= require rails-ujs
 //= require turbolinks
 //= require clipboard
+//= require clipboardtooltip
 //= require_tree .
 

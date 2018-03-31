@@ -21,4 +21,8 @@ Rails.application.routes.draw do
 
   get "/getvideo/:url", to: 'pdfs#getvideo', as: 'getvideo'
 
+  get "/searchpdfs", to: 'pdfs#searchpdfs', as: 'searchpdfs'
+
+  get "/index2", to: 'pdfs#index2', as: 'index2'
+
 end

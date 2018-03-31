@@ -58,6 +58,18 @@ class PdfsController < ApplicationController
 
   end
 
+  def index2
+
+    search = params[:search]
+
+    if search.nil?
+      @pdfs = Pdf.all
+    else
+      @pdfs = Pdf.search_title_file_name_url(search)
+    end
+
+  end
+
   private
 
   #Permitted parameters when creating a photo. This is used for security reasons.
