@@ -25,4 +25,6 @@ Rails.application.routes.draw do
 
   get "/index2", to: 'pdfs#index2', as: 'index2'
 
+  #get "/:url", to: 'posts#show'
+
 end

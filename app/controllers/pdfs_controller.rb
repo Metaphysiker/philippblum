@@ -3,7 +3,14 @@ class PdfsController < ApplicationController
   before_action :user_allowed?, except: :getpdf
   #Index action, photos gets listed in the order at which they were created
   def index
-    @pdfs = Pdf.all
+    search = params[:search]
+
+    if search.nil? || search.empty?
+      @pdfs = Pdf.all
+    else
+      @pdfs = Pdf.where("title ILIKE ? OR url ILIKE ? OR file_file_name ILIKE ?", "%#{search}%", "%#{search}%", "%#{search}%")
+      #@pdfs = Pdf.search_title_file_name_url(search)
+    end
   end
 
   #New action for creating a new photo
@@ -42,7 +49,7 @@ class PdfsController < ApplicationController
     @pdf= Pdf.find(params[:id])
     if @pdf.destroy
       flash[:notice] = "Successfully deleted pdf!"
-      redirect_to root_path
+      redirect_to pdfs_path
     else
       flash[:alert] = "Error deleting photo!"
     end

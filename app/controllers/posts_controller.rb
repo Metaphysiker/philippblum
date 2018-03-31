@@ -20,6 +20,7 @@ class PostsController < ApplicationController
 
   # GET /posts/1/edit
   def edit
+
   end
 
   # POST /posts
@@ -43,7 +44,13 @@ class PostsController < ApplicationController
   def update
       if @post.update(post_params)
         flash[:notice] = "Successfully updated post!"
-        redirect_to root_path
+
+        unless @post.url.nil?
+          redirect_to @post.url
+        else
+          redirect_to root_path
+        end
+
       else
        render :edit
       end
