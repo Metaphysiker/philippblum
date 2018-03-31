@@ -1,7 +1,6 @@
 <table class="table table-hover table-bordered results">
   <thead>
   <tr>
-    <th>#</th>
     <th>PDF</th>
     <th>Filename</th>
     <th>Edit</th>
@@ -16,9 +15,8 @@
   <% @pdfs.all.each do |pdf| %>
 
       <tr>
-        <th scope="row"><%= pdf.id %></th>
-        <td><%= link_to pdf.title, pdf.file.url(:original, false), target: :_blank  %></td>
-        <td><%= pdf.file_file_name %></td>
+        <td class="text-center"><%= link_to pdf.title, pdf.file.url(:original, false), target: :_blank  %></td>
+        <td class="text-center"><%= pdf.file_file_name %></td>
         <td>
           <%= link_to 'Edit', edit_pdf_path(pdf), class: 'btn btn-primary' %>
         </td>
@@ -30,7 +28,7 @@
         <td class="text-center">
           <button type="button" class="btn btn-secondary clipboard-btn" data-clipboard-action="copy" data-clipboard-target="#<%= pdf.url %>" >Copy URL</button>
         </td>
-        <td colspan="4">
+        <td colspan="3">
           <span id="<%= pdf.url %>"><%= (link_to pdf.title, getpdf_path(pdf.url), target: :_blank).chomp %></span>
         </td>
       </tr>

@@ -65,7 +65,8 @@ class PdfsController < ApplicationController
     if search.nil? || search.empty?
       @pdfs = Pdf.all
     else
-      @pdfs = Pdf.search_title_file_name_url(search)
+      @pdfs = Pdf.where("title ILIKE ? OR url ILIKE ? OR file_file_name ILIKE ?", "%#{search}%", "%#{search}%", "%#{search}%")
+      #@pdfs = Pdf.search_title_file_name_url(search)
     end
 
   end
