@@ -62,7 +62,7 @@ class PdfsController < ApplicationController
 
     search = params[:search]
 
-    if search.nil?
+    if search.nil? || search.empty?
       @pdfs = Pdf.all
     else
       @pdfs = Pdf.search_title_file_name_url(search)
