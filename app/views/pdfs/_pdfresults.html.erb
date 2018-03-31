@@ -12,6 +12,8 @@
   </thead>
   <tbody>
 
+  <% @pdfs || (@pdfs = Pdf.all) %>
+
   <% @pdfs.all.each do |pdf| %>
 
       <tr>
