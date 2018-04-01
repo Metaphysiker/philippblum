@@ -27,4 +27,6 @@ Rails.application.routes.draw do
 
   #get "/:url", to: 'posts#show'
 
+  get "/renderpdfresults", to: 'pdfs#renderpdfresults'
+
 end

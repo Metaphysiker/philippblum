@@ -3,14 +3,7 @@ class PdfsController < ApplicationController
   before_action :user_allowed?, except: :getpdf
   #Index action, photos gets listed in the order at which they were created
   def index
-    search = params[:search]
 
-    if search.nil? || search.empty?
-      @pdfs = Pdf.all
-    else
-      @pdfs = Pdf.where("title ILIKE ? OR url ILIKE ? OR file_file_name ILIKE ?", "%#{search}%", "%#{search}%", "%#{search}%")
-      #@pdfs = Pdf.search_title_file_name_url(search)
-    end
   end
 
   #New action for creating a new photo
@@ -74,6 +67,24 @@ class PdfsController < ApplicationController
     else
       @pdfs = Pdf.where("title ILIKE ? OR url ILIKE ? OR file_file_name ILIKE ?", "%#{search}%", "%#{search}%", "%#{search}%")
       #@pdfs = Pdf.search_title_file_name_url(search)
+    end
+
+  end
+
+  def renderpdfresults
+    search = params[:search]
+    partial = params[:partial]
+
+    if search.nil? || search.empty?
+      @pdfs = Pdf.all
+    else
+      @pdfs = Pdf.where("title ILIKE ? OR url ILIKE ? OR file_file_name ILIKE ?", "%#{search}%", "%#{search}%", "%#{search}%")
+      #@pdfs = Pdf.search_title_file_name_url(search)
+    end
+
+
+    respond_to do |format|
+      format.html { render partial: partial }
     end
 
   end

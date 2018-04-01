@@ -2,9 +2,13 @@
     <%= text_field_tag(:search, nil, placeholder: "Enter name of PDF", autocomplete: :off, class: "form-control") %>
     <%= submit_tag("Search", id: "triggersearch", class: "invisible") %>
 <% end %>
-<div id="pdfresults">
-  <%= render 'pdfs/pdfresults' %>
-</div>
+
+
+    <div id="pdfresults">
+      <%= render "pdfs/#{partial}" %>
+    </div>
+
+  <div class="invisible" id="partial"><%= partial %></div>
 
 <script>
     $(document).ready(function(){
@@ -14,7 +18,16 @@
         $( "#search" ).keyup(function() {
             $( "#pdfresults" ).html( "<div class=\"mx-auto loader\"></div>" );
 
-            $("#triggersearch").click();
+            $.ajax({
+                method: "GET",
+                url: "/renderpdfresults",
+                data: { search: $( "#search" ).val(), partial:  $( "#partial" ).text() }
+            }).done(function(result) {
+                $("#pdfresults").html(result);
+            });
+
+
+
         });
 
     });

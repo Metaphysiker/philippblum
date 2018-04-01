@@ -1,0 +1,33 @@
+<table class="table table-hover table-bordered results">
+  <thead>
+  <tr>
+    <th>PDF</th>
+    <th>Filename</th>
+  </tr>
+  <tr class="warning no-result">
+    <td colspan="4"><i class="fa fa-warning"></i> No result</td>
+  </tr>
+  </thead>
+  <tbody>
+
+  <% @pdfs || (@pdfs = Pdf.all) %>
+
+  <% @pdfs.all.each do |pdf| %>
+
+      <tr>
+        <td class="text-center"><%= link_to pdf.title, pdf.file.url(:original, false), target: :_blank  %></td>
+        <td class="text-center"><%= pdf.file_file_name %></td>
+
+      </tr>
+      <tr>
+        <td class="text-center">
+          <button type="button" class="btn btn-secondary clipboard-btn" data-clipboard-action="copy" data-clipboard-target="#<%= pdf.url %>" >Copy URL</button>
+        </td>
+        <td>
+          <span id="<%= pdf.url %>"><%= (link_to pdf.title, getpdf_path(pdf.url), target: :_blank).chomp %></span>
+        </td>
+      </tr>
+  <% end %>
+
+  </tbody>
+</table>
