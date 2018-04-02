@@ -1,5 +1,8 @@
 class StaticPagesController < ApplicationController
+  before_action :ahoytrack
+
   def welcome
+
     @post = Post.find_by_section("welcome")
   end
 
@@ -25,5 +28,11 @@ class StaticPagesController < ApplicationController
 
   def testarea
     @texts = Text.all
+  end
+
+  private
+
+  def ahoytrack
+    ahoy.track action_name.to_s, {language: "Ruby"}
   end
 end

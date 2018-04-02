@@ -51,6 +51,8 @@ class PdfsController < ApplicationController
   def getpdf
     url = params[:url]
 
+    ahoy.track url, {language: "Ruby"}
+
     unless url.nil?
       pdf = Pdf.find_by_url(url)
       redirect_to pdf.file.url(:original, false)
