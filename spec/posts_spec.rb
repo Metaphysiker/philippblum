@@ -1,4 +1,5 @@
 require "rails_helper"
+require 'capybara/rails'
 
 RSpec.describe Post, :type => :model do
   context "basic post creation" do
