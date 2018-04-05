@@ -591,6 +591,7 @@ GEM
     aws-sigv4 (1.0.2)
     bcrypt (3.1.11)
     bindex (0.5.0)
+    brakeman (4.2.1)
     browser (2.5.3)
     builder (3.2.3)
     byebug (10.0.2)
@@ -797,6 +798,7 @@ DEPENDENCIES
   ahoy_matey
   aws-sdk (~> 3)
   aws-sdk-s3 (~> 1)
+  brakeman
   byebug
   capybara (~> 2.13)
   clipboard-rails

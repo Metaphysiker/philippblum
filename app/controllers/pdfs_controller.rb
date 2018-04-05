@@ -75,7 +75,15 @@ class PdfsController < ApplicationController
 
   def renderpdfresults
     search = params[:search]
-    partial = params[:partial]
+
+    allowed_partials = ["pdfresults", "pdfresultsoutside"]
+
+    partial = allowed_partials[allowed_partials.index(params[:partial].to_s)]
+    if allowed_partials.include?(params[:partial].to_s)
+      partial = params[:partial].to_s
+    else
+      partial = allowed_partials[1]
+    end
 
     if search.nil? || search.empty?
       @pdfs = Pdf.all
@@ -83,7 +91,6 @@ class PdfsController < ApplicationController
       @pdfs = Pdf.where("title ILIKE ? OR url ILIKE ? OR file_file_name ILIKE ?", "%#{search}%", "%#{search}%", "%#{search}%")
       #@pdfs = Pdf.search_title_file_name_url(search)
     end
-
 
     respond_to do |format|
       format.html { render partial: partial }
