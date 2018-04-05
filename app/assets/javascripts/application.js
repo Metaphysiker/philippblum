@@ -14,5 +14,5 @@
 //= require turbolinks
 //= require clipboard
 //= require clipboardtooltip
+//= require jqueryauthenticity
 //= require_tree .
-

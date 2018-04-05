@@ -29,4 +29,6 @@ Rails.application.routes.draw do
 
   get "/renderpdfresults", to: 'pdfs#renderpdfresults'
 
+  post "/renderpdfresults", to: 'pdfs#renderpdfresults'
+
 end

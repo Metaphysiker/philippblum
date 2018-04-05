@@ -19,7 +19,8 @@
             $( "#pdfresults" ).html( "<div class=\"mx-auto loader\"></div>" );
 
             $.ajax({
-                method: "GET",
+                method: "POST",
+                headers: { 'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content') },
                 url: "/renderpdfresults",
                 data: { search: $( "#search" ).val(), partial:  $( "#partial" ).text() }
             }).done(function(result) {
