@@ -1,7 +1,7 @@
 <div class="jumbotron">
   <h1 class="text-center"><%= sanitize @post.title %></h1>
   <div class="text-justify">
-    <%= sanitize @post.text, attributes: %w(href target) %>
+    <%= sanitize @post.text, attributes: %w(href target id) %>
   </div>
 
   <% if user_signed_in? && current_user.is_admin? %>
