@@ -11,7 +11,7 @@ class StaticPagesController < ApplicationController
   end
 
   def teaching
-
+    @post = Post.find_by_section("teaching")
   end
 
   def workshops
@@ -23,7 +23,7 @@ class StaticPagesController < ApplicationController
   end
 
   def nonacademicstuff
-
+    @post = Post.find_by_section("nonacademicstuff")
   end
 
   def testarea
