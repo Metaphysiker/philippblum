@@ -15,4 +15,6 @@
 //= require clipboard
 //= require clipboardtooltip
 //= require jqueryauthenticity
+//= require Chart.bundle
+//= require chartkick
 //= require_tree .

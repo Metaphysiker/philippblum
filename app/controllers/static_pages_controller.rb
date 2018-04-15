@@ -1,4 +1,5 @@
 class StaticPagesController < ApplicationController
+  before_action :user_allowed?, only: :visits
 
   def welcome
 
@@ -31,6 +32,10 @@ class StaticPagesController < ApplicationController
 
   def testarea
     @texts = Text.all
+  end
+
+  def visits
+
   end
 
   private

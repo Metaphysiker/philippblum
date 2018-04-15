@@ -19,6 +19,8 @@ Rails.application.routes.draw do
 
   get '/nonacademicstuff', to: 'static_pages#nonacademicstuff'
 
+  get '/visits', to: 'static_pages#visits'
+
   get "/getpdf/:url", to: 'pdfs#getpdf', as: 'getpdf'
 
   get "/getvideo/:url", to: 'pdfs#getvideo', as: 'getvideo'
