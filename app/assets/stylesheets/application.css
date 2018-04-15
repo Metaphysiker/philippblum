@@ -49,3 +49,18 @@
     100% { transform: rotate(360deg); }
 }
 
+.changeh h1{
+    font-size: 26px;
+}
+
+.changeh h2{
+    font-size: 24px;
+}
+
+.changeh h3{
+    font-size: 22px;
+}
+
+.changeh h4{
+    font-size: 20px;
+}

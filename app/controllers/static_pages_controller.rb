@@ -2,11 +2,10 @@ class StaticPagesController < ApplicationController
   before_action :user_allowed?, only: :visits
 
   def welcome
-
+    @post = Post.find_by_section("welcome")
   end
 
   def aboutme
-
     @post = Post.find_by_section("aboutme")
   end
 
