@@ -24,3 +24,5 @@ Post.create!([
 Post.create(title: "Non-Academic Stuff", text: "Non-Academic Stuff", section: "nonacademicstuff", url: "/nonacademicstuff")
 
 Post.create(title: "Teaching", text: "Teaching", section: "teaching", url: "/teaching")
+
+Post.create(title: "Talks", text: "Talks", section: "talks", url: "/talks")

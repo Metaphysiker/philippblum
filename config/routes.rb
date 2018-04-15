@@ -11,6 +11,8 @@ Rails.application.routes.draw do
 
   get '/workshops', to: 'static_pages#workshops'
 
+  get '/talks', to: 'static_pages#talks'
+
   get '/services', to: 'static_pages#services'
 
   get '/testarea', to: 'static_pages#testarea'

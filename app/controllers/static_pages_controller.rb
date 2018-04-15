@@ -25,6 +25,10 @@ class StaticPagesController < ApplicationController
     @post = Post.find_by_section("nonacademicstuff")
   end
 
+  def talks
+    @post = Post.find_by_section("talks")
+  end
+
   def testarea
     @texts = Text.all
   end

@@ -1,10 +1,10 @@
 <div class="jumbotron">
   <div class="row">
 
-
-    <div class="col-lg-6 col-md-4 col-sm-12 mb-4">
-      <div class="text-center p-1">
-      <%= image_tag("personalfoto.jpg", class: "img-fluid rounded") %>
+    <div class="col-lg-4 col-md-3 col-sm-6 col-6 offset-3 offset-sm-3 offset-md-0 mb-4">
+      <div class="text-center">
+        <p class="text-center">	&nbsp;</p>
+          <%= image_tag("foto.jpg", class: "img-fluid rounded rounded mx-auto d-block") %>
         <br>
         <br>
         <p>
@@ -14,7 +14,7 @@
         </p>
     </div>
     </div>
-    <div class="col-lg-6 col-md-8 col-sm-12 text-justify">
+    <div class="col-lg-8 col-md-9 col-sm-12 text-justify">
       <p class="text-center"><%= sanitize @post.title %></p>
       <div class="text-justify">
         <%= sanitize @post.text, attributes: %w(href target) %>
