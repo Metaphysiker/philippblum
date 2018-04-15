@@ -1,5 +1,4 @@
 class StaticPagesController < ApplicationController
-  before_action :ahoytrack
 
   def welcome
 
