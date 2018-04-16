@@ -38,6 +38,12 @@ class StaticPagesController < ApplicationController
   end
 
   def visits
+  @pagehash = {}
+
+    StaticPagesController.action_methods.each do |c|
+      @pagehash[c.to_s] = Ahoy::Event.select(:visit_id).distinct.where_props(action: c.to_s).count
+    end
+
 
   end
 
